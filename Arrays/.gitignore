@@ -1,4 +1,5 @@
-*.exe
+# Ignore build files
 build/
-.vscode/
+*.exe
 *.o
+*.out
