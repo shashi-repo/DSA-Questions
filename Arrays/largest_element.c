@@ -2,7 +2,7 @@
 int main()
 {
     int n;
-    printf("Enter number of elements:\n");
+    printf("Enter numbers of elements:\n");
     scanf("%d",&n);
     int arr[n];
     printf("Enter elements:\n");
@@ -10,7 +10,12 @@ int main()
     {
         scanf("%d",&arr[i]);
     }
-    int result=arr[0]-arr[n-1];
-    printf("Result:%d",result);
+    int max=arr[0];
+    for(int i=0;i<n;i++)
+    {
+        if(arr[i]>max)
+        max=arr[i];
+    }
+    printf("MAX:%d",max);
     return 0;
 }
